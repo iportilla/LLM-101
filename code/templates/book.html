@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookingBot Chat</title>
+</head>
+<body>
+    <h1>Restaurant BookingBot</h1>
+    <form method="POST">
+        <label for="user_input">Enter your message:</label><br>
+        <input type="text" id="user_input" name="user_input" placeholder="Enter text here..." style="width: 300px;"><br><br>
+        <input type="submit" value="Send">
+    </form>
+    
+    {% if user_message %}
+    <h2>You:</h2>
+    <p>{{ user_message }}</p>
+    
+    <h2>OrderBot:</h2>
+    <p>{{ bot_response }}</p>
+    {% endif %}
+</body>
+</html>
