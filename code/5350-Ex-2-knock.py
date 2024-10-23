@@ -36,19 +36,22 @@ context = [{'role': 'user', 'content': 'How are you'}]
 response = get_completion_from_messages(messages=context)
 print(response)
 
-# context =[ {
-#       "role": "user",
-#       "content": [{ "type": "text", "text": "knock knock." }]
-#     },
-#     {
-#       "role": "assistant",
-#       "content": [{ "type": "text", "text": "Who's there?" }]
-#     },
-#     {
-#       "role": "user",
-#       "content": [{ "type": "text", "text": "Orange." }]
-#     }
-#   ]
+# {"role": "system", "content": "You are a helpful assistant."},
+context =[ 
+    {"role": "system", "content": "You are a helpful assistant."},
+    {
+      "role": "user",
+      "content": [{ "type": "text", "text": "knock knock." }]
+    },
+    {
+      "role": "assistant",
+      "content": [{ "type": "text", "text": "Who's there?" }]
+    },
+    {
+      "role": "user",
+      "content": [{ "type": "text", "text": "Orange." }]
+    }
+  ]
 
-# response = get_completion_from_messages(messages=context)
-# print(response)
+response = get_completion_from_messages(messages=context)
+print(response)
