@@ -1,0 +1,13 @@
+Start with:
+
+1.
+Write a custom chatbot that uses the OpenAI API and Gradio. The chatbot should first ask the user what kind of bot they’d like to talk to (such as ‘coding assistant’ or ‘therapist’) and then present them with input and output areas.
+
+2.
+I don’t want to hardcode my API key into this file. How can I avoid that?
+
+3.
+Choose a different model like `gpt-3.5-turbo`
+
+4.
+Fix live updates bug
